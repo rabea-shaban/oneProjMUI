@@ -1,8 +1,15 @@
+import { Box } from "@mui/material";
+import Typography from "@mui/material/Typography";
 
-export const Home = () => {
+const Home = () => {
   return (
-    <div>
-        <h5>Home</h5>
-    </div>
-  )
-}
+    <Box>
+      <Typography color="textSecondary" variant="h3">
+        home
+      </Typography>
+    </Box>
+  );
+};
+
+
+export default Home;

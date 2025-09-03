@@ -1,10 +1,15 @@
 import { Outlet } from "react-router-dom";
-import Sidebar from "../components/Sidebar";
+import Navbar from "../components/Navbar";
+import Sidbar from "../components/Sidebar";
 
 const RootLayout = () => {
+  const drawerWidth = 240;
+
   return (
     <>
-      <Sidebar />
+      <Navbar drawerWidth={drawerWidth} />
+      <Sidbar drawerWidth={drawerWidth} />
+
       <Outlet />
     </>
   );
